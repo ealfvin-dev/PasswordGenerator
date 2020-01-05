@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Password Generator</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+
+            </div>
+        </div>
+    </nav>
+
+    <h1>Password Generator</h1>
+
+    <div class="container-full">
+        <div class="row">
+            <div class="col-lg-3">
+
+            </div>
+
+            <div class="col-lg-6">
+                <h2>Generate a Random Password</h2>
+                <div id="BorderBox">
+                    <div id="PasswordBox"> <br/> Your Secure Password
+                        <p id="Password"></p>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary">Generate Password</button>
+                <button type="button" class="btn btn-danger">Copy to Clipboard</button>
+            </div>
+
+            <div class="col-lg-3">
+
+            </div>
+
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="generator.js"></script>
+</body>
+</html>
