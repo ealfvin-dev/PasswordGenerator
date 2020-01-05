@@ -22,6 +22,7 @@ function generatePassword() {
     var special = ["~", "`", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "+", "=", "[", "]", "{", "}", "|", ";", ":", "<", ">", ",", ">", "?", "'"];
 
     var finalSet = [];
+    var password = "";
 
     if (useUppercase) {
         uppercase.forEach(addToFinalSet);
@@ -43,5 +44,14 @@ function generatePassword() {
         finalSet.push(value);
     }
 
-    console.log(finalSet);
+    for(var i = 0; i < passwordLength; i++) {
+        var rand = Math.floor(Math.random() * finalSet.length);
+        password = password + finalSet[rand];
+    }
+    document.getElementById("Password").innerHTML = password;
+    document.getElementById("Password").style.visibility = "visible";
+}
+
+function copyToClipboard() {
+    
 }

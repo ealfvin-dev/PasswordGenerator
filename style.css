@@ -40,8 +40,10 @@ h2 {
 }
 
 #Password {
-    margin-top: 15%;
-    margin-bottom: 20%;
+    visibility: hidden;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    font-size: 14pt;
 }
 
 .col-lg-6 {
