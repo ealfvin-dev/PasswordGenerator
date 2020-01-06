@@ -1,3 +1,5 @@
+var password = "";
+
 function generatePassword() {
     var passwordLength = prompt("Enter required password length (8 - 128 characters")
 
@@ -22,7 +24,7 @@ function generatePassword() {
     var special = ["~", "`", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "+", "=", "[", "]", "{", "}", "|", ";", ":", "?", "\"", "\'"];
 
     var finalSet = [];
-    var password = "";
+    password = "";
 
     if (useUppercase) {
         uppercase.forEach(addToFinalSet);
@@ -44,16 +46,15 @@ function generatePassword() {
         finalSet.push(value);
     }
 
-    for(var i = 0; i < passwordLength; i++) {
+    for (var i = 0; i < passwordLength; i++) {
         var rand = Math.floor(Math.random() * finalSet.length);
         password = password + finalSet[rand];
-        console.log(rand);
-        console.log(finalSet[rand]);
     }
+
     document.getElementById("Password").innerHTML = password;
     document.getElementById("Password").style.visibility = "visible";
 }
 
 function copyToClipboard() {
-
+    navigator.clipboard.writeText(password);
 }
