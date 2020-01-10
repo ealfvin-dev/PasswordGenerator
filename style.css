@@ -68,3 +68,10 @@ h2 {
     margin-left: 0%;
     margin-right: 0%;
 }
+
+@media (max-width: 600px) {
+    .container-full {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
