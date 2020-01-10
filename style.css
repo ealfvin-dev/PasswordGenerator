@@ -58,9 +58,13 @@ h2 {
 .btn-primary {
     float: left;
     margin-top: 3%;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 
 .btn-danger {
     float: right;
     margin-top: 3%;
+    margin-left: 0%;
+    margin-right: 0%;
 }
